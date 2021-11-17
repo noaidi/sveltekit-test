@@ -1,5 +1,4 @@
 <script context="module">
-	console.log('bb');
 	/** @type {import('@sveltejs/kit').ErrorLoad} */
 	export function load({ error, status }) {
 		return {
@@ -12,7 +11,6 @@
 
 <script>
 	export let title;
-	console.log('aa');
 </script>
 
 <h1>{title}</h1>
