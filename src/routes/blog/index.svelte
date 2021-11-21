@@ -18,14 +18,11 @@
 </script>
 
 {#if rows}
-	<section>
+	<ul>
 		{#each rows as row}
-			<article>
-				<a href="{row.url}">
-					<h4>{row.title}</h4>
-					<p>{row.body}</p>
-				</a>
-			</article>
+			<li>
+				<a href="{row.url}">{row.title}</a>
+			</li>
 		{/each}
-	</section>
+	</ul>
 {/if}
