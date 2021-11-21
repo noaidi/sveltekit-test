@@ -4,8 +4,13 @@ export async function get({params}) {
 	return {
 		status: 200,
 		body: {
-			name: 'test',
-			email: 'test@test.com'
+			list: {
+				url: '/blog'
+			},
+			row: {
+				title: 'Sample Title',
+				body: 'Sample Body'
+			}
 		}
 	}
 }
